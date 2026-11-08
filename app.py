@@ -17,9 +17,8 @@ st.set_page_config(page_title=f'NBA {SEASON}', page_icon='🏀', layout='wide')
 from pathlib import Path
 if not all((Path(__file__).resolve().parent/path).exists() for path in
            ['artifacts/xgboost.json','data/teams.csv','data/matchups.csv']):
-    st.title('NBA Champion Forecasting')
-    st.info('Real-data forecasts require locally acquired data and a trained model. See docs/SETUP.md.')
-    st.markdown('Try the offline synthetic demonstration: `python -m streamlit run demo.py`. All demo teams and statistics are invented.')
+    from hosted_dashboard import render_dashboard
+    render_dashboard()
     st.stop()
 
 @st.cache_data(ttl=1800,show_spinner=False)

@@ -36,4 +36,4 @@ python scripts/publish_forecast.py --snapshot data/live_snapshot.json
 
 This publishes only primary-model probabilities and forecast dates to the README, a chart, and `reports/forecast.json`. The daily GitHub Actions workflow rebuilds inputs and the model in temporary storage and updates this same view. If a refresh fails, the previous successful forecast and timestamp remain unchanged.
 
-GitHub READMEs display the chart/table; an interactive Streamlit application requires separate hosting. No hosted dashboard URL is configured.
+GitHub READMEs display the chart/table; an interactive Streamlit application requires separate hosting. Deploy `app.py` on Streamlit Community Cloud using Python 3.11. With no local training artifacts, it displays the real published primary forecast from `reports/forecast.json`, checks GitHub for newer outputs every 30 minutes, and keeps the last committed forecast if the network is unavailable. The hosted viewer does not train or fabricate probabilities. Full local training inputs continue to enable the research application.

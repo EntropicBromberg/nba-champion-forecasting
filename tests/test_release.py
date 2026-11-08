@@ -28,10 +28,12 @@ class ReleaseTests(unittest.TestCase):
             self.assertEqual(len(app.exception),0)
 
     @unittest.skipIf((ROOT/'artifacts/xgboost.json').exists(), 'Real-data environment has been prepared')
-    def test_real_app_explains_missing_local_inputs_without_network(self):
+    def test_hosted_real_forecast_runs_without_training_inputs_or_network(self):
         with patch('requests.sessions.Session.request',side_effect=AssertionError('Unexpected network')):
             app=AppTest.from_file(str(ROOT/'app.py')).run(timeout=20)
         self.assertEqual(len(app.exception),0)
-        self.assertTrue(any('locally acquired data' in item.value for item in app.info))
+        self.assertEqual(app.title[0].value,'NBA championship probabilities')
+        self.assertEqual(len(app.dataframe[0].value),30)
+        self.assertTrue(any('Games through' in item.value for item in app.caption))
 
 if __name__=='__main__':unittest.main()
