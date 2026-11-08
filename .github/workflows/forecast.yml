@@ -29,10 +29,26 @@ jobs:
           python train.py
           python -c "import live; live.refresh(); print('Primary forecast refreshed successfully')"
           python scripts/publish_forecast.py --snapshot data/live_snapshot.json
+      - name: Compute injury-adjusted scenario
+        continue-on-error: true
+        run: python -c "import json,injury_live; from pathlib import Path; injury_live.forecast(json.loads(Path('data/live_snapshot.json').read_text()),force=True)"
+      - name: Prepare uncertainty inputs
+        continue-on-error: true
+        run: |
+          python experiments/player_minutes/fetch.py
+          python -c "from experiments.team_uncertainty.decision_check.common import research; research.build()"
+      - name: Compute uncertainty and recovery stress scenarios
+        continue-on-error: true
+        run: |
+          python -c "import json,experimental_live,injury_uncertainty; from pathlib import Path; p=json.loads(Path('data/live_snapshot.json').read_text()); experimental_live.forecast(p); injury_uncertainty.forecast(p)"
+      - name: Publish aligned experimental outputs
+        run: python scripts/publish_experiments.py --data-dir data --primary data/live_snapshot.json
       - uses: actions/upload-artifact@v4
         with:
           name: public-forecast
-          path: reports/forecast.json
+          path: |
+            reports/forecast.json
+            reports/experimental_forecasts.json
           retention-days: 1
   publish:
     needs: forecast
@@ -56,7 +72,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add README.md reports/forecast.json reports/title_probabilities.svg
+          git add README.md reports/forecast.json reports/title_probabilities.svg reports/experimental_forecasts.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update championship probabilities'
             git push origin HEAD:main

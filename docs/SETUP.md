@@ -37,3 +37,15 @@ python scripts/publish_forecast.py --snapshot data/live_snapshot.json
 This publishes only primary-model probabilities and forecast dates to the README, a chart, and `reports/forecast.json`. The daily GitHub Actions workflow rebuilds inputs and the model in temporary storage and updates this same view. If a refresh fails, the previous successful forecast and timestamp remain unchanged.
 
 GitHub READMEs display the chart/table; an interactive Streamlit application requires separate hosting. Deploy `app.py` on Streamlit Community Cloud using Python 3.11. With no local training artifacts, it displays the real published primary forecast from `reports/forecast.json`, checks GitHub for newer outputs every 30 minutes, and keeps the last committed forecast if the network is unavailable. The hosted viewer does not train or fabricate probabilities. Full local training inputs continue to enable the research application.
+
+## Experimental variations
+
+The hosted app displays separately published uncertainty, injury-adjusted, and injury/recovery stress scenarios below the primary XGBoost forecast. Each run must match the primary forecast's cutoff and probability fingerprint. A stale or unavailable variation is labeled rather than substituted into the primary result.
+
+After generating the private scenario snapshots, export only their aggregate outputs:
+
+```bash
+python scripts/publish_experiments.py --data-dir data --primary data/live_snapshot.json
+```
+
+Stress results use the published severity and recovery settings. The hosted comparison does not recompute a new scenario when viewers select teams. The daily workflow attempts all variations; failure of an optional experiment does not prevent publication of a successful primary forecast.

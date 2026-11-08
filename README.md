@@ -1,5 +1,7 @@
 # NBA Champion Forecasting
 
+[Explore the interactive dashboard](https://nba-champion-forecasting-dqxpvfhd8s7cpt8mmqkzna.streamlit.app/)
+
 [![Tests](https://github.com/EntropicBromberg/nba-champion-forecasting/actions/workflows/tests.yml/badge.svg)](https://github.com/EntropicBromberg/nba-champion-forecasting/actions/workflows/tests.yml)
 
 As a long-time basketball fan and lover of basketball analytics, I wanted to understand championship contention beyond standings and narratives. This project brings that interest together with probability, statistics, mathematical modeling, and quantitative analysis: estimating how team strength translates into a path through the season and playoffs.
@@ -79,10 +81,10 @@ The most valuable lessons came from separating observed injuries from assumed pl
 
 ```bash
 python -m pip install -r requirements.txt
-python -m streamlit run demo.py
+python -m streamlit run app.py
 ```
 
-The offline demo uses invented teams and an illustrative matchup rule. For the real-data application, see [setup](docs/SETUP.md). Raw datasets and trained models are generated locally and are not bundled.
+The app displays real primary-model probabilities and clearly labeled experimental variations. Full model training and data acquisition are described in [setup](docs/SETUP.md); raw datasets and fitted models are not bundled. An optional synthetic example remains in `demo.py`.
 
 ```bash
 python -m unittest discover -s tests -v

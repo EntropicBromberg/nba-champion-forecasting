@@ -7,6 +7,7 @@ import plotly.express as px
 import requests
 import streamlit as st
 from scripts.publish_forecast import public_forecast
+from experimental_dashboard import render_variations,load_bundle
 
 ROOT=Path(__file__).resolve().parent
 FORECAST_URL='https://raw.githubusercontent.com/EntropicBromberg/nba-champion-forecasting/main/reports/forecast.json'
@@ -32,10 +33,15 @@ def cached_forecast():
     return load_forecast()
 
 
+def refresh_views():
+    cached_forecast.clear()
+    load_bundle.clear()
+
+
 def render_dashboard():
     st.title('NBA championship probabilities')
-    st.caption('Real primary-model outputs · 2026–27 season')
-    st.button('Refresh forecast',on_click=cached_forecast.clear)
+    st.caption('Primary model · XGBoost · 2026–27 season')
+    st.button('Refresh forecast',on_click=refresh_views)
     with st.spinner('Loading the latest published forecast…'):
         data,warning=cached_forecast()
     if warning:st.warning(warning)
@@ -69,3 +75,5 @@ def render_dashboard():
         st.markdown('The forecasting pipeline is scheduled daily. This app checks for newly published outputs every 30 minutes; clicking refresh does not retrain the model. Failed source or training runs preserve the previous forecast and timestamp.')
         st.markdown('Historical series accuracy does not establish calibrated in-season championship odds. Future strength is held fixed within a path, tied records are simplified, and displayed zeros can reflect simulation sampling. Injury and uncertainty scenarios remain separate research experiments.')
         st.markdown(f'[Methodology]({REPOSITORY}/blob/main/docs/METHODOLOGY.md) · [Source code]({REPOSITORY})')
+
+    render_variations(data,selected)
