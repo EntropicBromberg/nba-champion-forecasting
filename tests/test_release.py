@@ -2,6 +2,8 @@ from pathlib import Path
 import unittest
 from unittest.mock import patch
 import numpy as np
+import requests
+import hosted_dashboard
 from streamlit.testing.v1 import AppTest
 from synthetic_demo import synthetic_forecast
 
@@ -29,7 +31,8 @@ class ReleaseTests(unittest.TestCase):
 
     @unittest.skipIf((ROOT/'artifacts/xgboost.json').exists(), 'Real-data environment has been prepared')
     def test_hosted_real_forecast_runs_without_training_inputs_or_network(self):
-        with patch('requests.sessions.Session.request',side_effect=AssertionError('Unexpected network')):
+        hosted_dashboard.cached_forecast.clear()
+        with patch('hosted_dashboard.requests.get',side_effect=requests.ConnectionError('offline')):
             app=AppTest.from_file(str(ROOT/'app.py')).run(timeout=20)
         self.assertEqual(len(app.exception),0)
         self.assertEqual(app.title[0].value,'NBA championship probabilities')
