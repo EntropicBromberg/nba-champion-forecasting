@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-10-26T00:59:21Z",
+  "purpose": "Focused retrospective pre-playoff production comparison and earlier-seasons-only calibration. No promotion, no production changes.",
+  "cases": "Identical 2013-2026 pre-playoff snapshots: 1211 games and 210 series. Validate event identities, cutoffs, outcomes and projected series home court before reusing cached walk-forward forecasts.",
+  "models": ["production series XGBoost pipeline", "team-only fixed strength", "team-only uncertainty-aware strength"],
+  "calibration": "p_calibrated = expit(a * logit(p_raw)); one positive slope, no intercept, independently fitted for each model and target (games/series). Preserve matchup-complement symmetry.",
+  "fit": "Bounded maximum likelihood, a in [0.25,4], no tuning. Expanding window of only earlier complete-season out-of-season PRE-PLAYOFF forecasts; never in-sample predictions or October/January duplicates. Check all calibration outcomes resolved before target cutoff.",
+  "warmup": "Require at least three earlier scored seasons; use identity slope 1 for 2013-2015. Active fitted calibration begins in 2016. Report this explicitly.",
+  "comparison": "Raw and calibrated versions of ALL THREE models, paired whole-season 2000-resample intervals, separate per-season differences and 10-bin ECE.",
+  "limits": ["These historical outcomes have already been examined; results are diagnostic, not a new promotion holdout.","Pre-playoff production inputs use completed regular-season features and actual live blending, not an archived vendor-vintage table.","Calibration is a post-hoc output diagnostic, separately for game/series targets; it is not yet a coherent calibrated season-simulation implementation.","Original uncertainty and player promotion rules stay unchanged; displayed odds stay unchanged."]
+}

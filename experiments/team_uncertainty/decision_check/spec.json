@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc":"2026-10-26T02:12:04Z",
+  "scope":"Retrospective paired season-level uncertainty-vs-calibrated-production check, all three checkpoints, title calibration; no automatic promotion.",
+  "reuse":"Reuse frozen uncertainty game/series forecasts and prior-only production fold features. Reconcile common series home court at every checkpoint.",
+  "calibration":"Same bounded positive logit slope [0.25,4], no intercept, model/target/checkpoint separately, expanding earlier completed-season OOS forecasts only; first three available seasons identity. No pooled October/January duplicates in calibrator training.",
+  "title":"10000 persistent season paths per model/checkpoint, fixed seed, same future fixture list and format; calibrated production calibrates single-game and native series probabilities before simulation. Uncertainty keeps the unchanged raw game head and shared strength draw.",
+  "formats":"Top eight through 2019; 2020 top eight plus 8-v-9 play-in if within four wins (ninth must win twice); 2021 onward modern play-in. Finals 2013 use 2-3-2. Bubble neutral at pre-playoff 2020.",
+  "scoring":"Title multiclass log loss and summed multiclass Brier per season; Monte Carlo probabilities use additive 0.5 count smoothing, not learned calibration. Team-row reliability bins/ECE are descriptive only. Paired bootstrap resamples whole seasons (2000), and reports each checkpoint separately.",
+  "limits":["October/January production BPM remains proxy-based; these results are not exact production replays.","Historical future fixtures and pandemic participation/rules are conditioned on as realized, not archived as-of schedules.","Only 14 champions per checkpoint, with dependent checkpoint views of each season; no promotion from this reused cohort.","Post-hoc calibration is distinct for production game and series heads, matching their existing separate roles; not a single generative game calibration."],
+  "ui":"Production remains default and primary. Experimental odds are explicitly labeled, opt-in, use the unchanged raw uncertainty method, are date-aligned to the primary snapshot, and never replace production on error."
+}

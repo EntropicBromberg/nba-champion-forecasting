@@ -1,0 +1,63 @@
+name: Update championship probabilities
+on:
+  schedule:
+    - cron: '30 15 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: forecast-refresh
+  cancel-in-progress: false
+jobs:
+  forecast:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+      - run: python -m pip install -r requirements.txt
+      - name: Acquire historical inputs
+        run: |
+          python scripts/fetch_reference.py
+          python scripts/fetch_logs.py
+          python data_pipeline.py
+      - name: Train and refresh the primary model
+        run: |
+          python train.py
+          python -c "import live; live.refresh(); print('Primary forecast refreshed successfully')"
+          python scripts/publish_forecast.py --snapshot data/live_snapshot.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: public-forecast
+          path: reports/forecast.json
+          retention-days: 1
+  publish:
+    needs: forecast
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/download-artifact@v4
+        with:
+          name: public-forecast
+          path: reports
+      - name: Render the latest README
+        run: python scripts/publish_forecast.py --snapshot reports/forecast.json
+      - name: Commit updated probabilities
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md reports/forecast.json reports/title_probabilities.svg
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update championship probabilities'
+            git push origin HEAD:main
+          fi

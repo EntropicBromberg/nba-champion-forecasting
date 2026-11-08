@@ -1,0 +1,48 @@
+{
+  "training_seasons": 25,
+  "training_series": 375,
+  "trained_through": 2026,
+  "protocol": "10 initial training seasons; outer walk-forward through 2026; inner final 3 training seasons for ablations; fixed 600 trees; 1000 whole-season bootstrap resamples.",
+  "metrics": {
+    "Higher SRS wins": {
+      "log_loss": 4.236757264439017,
+      "brier": 0.30666666666666664,
+      "accuracy": 0.6933333333333334,
+      "log_loss_95": [
+        3.6227346174221116,
+        4.790912703378825
+      ],
+      "brier_95": [
+        0.26222222222222225,
+        0.3467777777777777
+      ]
+    },
+    "SRS logistic (evaluation only)": {
+      "log_loss": 0.5654914295155077,
+      "brier": 0.1927373030938563,
+      "accuracy": 0.6933333333333334,
+      "log_loss_95": [
+        0.5080952626849085,
+        0.6293039690463278
+      ],
+      "brier_95": [
+        0.17128913716004493,
+        0.2158860987663208
+      ]
+    },
+    "XGBoost": {
+      "log_loss": 0.586503672075442,
+      "brier": 0.19837263776480626,
+      "accuracy": 0.7111111111111111,
+      "log_loss_95": [
+        0.526746942633763,
+        0.6398217996536857
+      ],
+      "brier_95": [
+        0.17343009785069874,
+        0.22114379850739466
+      ]
+    }
+  },
+  "scope": "Aggregate author-computed research results; no raw inputs, individual predictions, or fitted model included."
+}

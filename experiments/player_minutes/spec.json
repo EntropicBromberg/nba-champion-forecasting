@@ -1,0 +1,23 @@
+{
+  "status": "fixed before scoring",
+  "seasons": [2003, 2026],
+  "initial_training_seasons": 10,
+  "test_seasons": [2013, 2026],
+  "checkpoints": {"october": "November 1 00:00, skip if season has not started", "january": "January 16 00:00", "pre_playoff": "day after final regular-season game"},
+  "training_snapshots": "Every historical game, all inputs strictly before its calendar date; no same-day results.",
+  "test_snapshots": "Freeze ratings, rotations and team strength at checkpoint. Evaluate all subsequent games and actual playoff matchups, conditional on future fixtures, not a replay of an archived schedule.",
+  "player_rating": "Prior-season regular-season BPM only, shrunk toward -2 with 500 pseudo-minutes; never current-season final BPM.",
+  "minutes": "Mean minutes in team's last five already-played games, counting absences as zero. Before five games, fill missing games with prior-season team-stint MPG. Normalize projected team minutes to 240. No current game's actual lineup or minutes.",
+  "roster": "Prior regular-season last observed team, updated only after an already-played appearance on another team. Offseason trades/rookies unknown until observed; no current final roster.",
+  "player_team_strength": "sum(projected_minutes * prior_player_rating) / 48",
+  "team_strength": "Schedule-adjusted regular-season margins using a 20-game ridge prior on previous season SRS. Solve using only results strictly before date. Subtract fixed 3-point home adjustment; 2020 bubble neutral.",
+  "features_without": ["d_team_strength", "home_court", "d_rest"],
+  "features_with": ["d_team_strength", "home_court", "d_rest", "d_player_strength"],
+  "xgboost": {"objective": "binary:logistic", "eval_metric": "logloss", "max_depth": 2, "n_estimators": 300, "learning_rate": 0.03, "min_child_weight": 20, "reg_lambda": 10, "reg_alpha": 0.5, "gamma": 1, "subsample": 1, "colsample_bytree": 1, "random_state": 0, "n_jobs": 1},
+  "series": "Exact best-of-seven win DP, 2-2-1-1-1 (Finals through 2013: 2-3-2). Home court projected from checkpoint records + SRS, not eventual results; bubble neutral. Rest difference fixed to zero for possible series games.",
+  "baselines": ["SRS logistic game model: same pre-date team strength and home court, prior seasons only", "Current SRS series logistic baseline: existing historical d_srs series rows, prior seasons only; invert iid best-of-seven curve for game probabilities"],
+  "metrics": ["log_loss", "brier", "10_equal_width_bin_ECE", "calibration_bins"],
+  "bootstrap": "2000 paired whole-season resamples; overlapping checkpoint forecasts remain in the same season cluster",
+  "promotion_rule": "Keep candidate only if game log-loss paired 95% upper delta < 0; game Brier, series log loss and series Brier improve; log loss improves in at least two-thirds of seasons for BOTH games and series; at least two checkpoint types improve game log loss; game ECE worsens by no more than 0.005. All comparisons are with vs without player strength. No automatic production changes.",
+  "excluded": ["injury archives", "future actual minutes", "current-season final player BPM", "future results in checkpoint inputs", "test-season tuning", "production edits"]
+}

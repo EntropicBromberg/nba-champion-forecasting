@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.DS_Store
+.env
+.env.*
+!.env.example
+/data/*
+!/data/sources.json
+/artifacts/
+/experiments/**/cache/
+/experiments/**/results/*
+!/experiments/**/results/summary.md
+/experiments/**/production_results/*
+!/experiments/**/production_results/summary.md

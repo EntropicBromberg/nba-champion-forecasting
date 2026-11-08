@@ -1,0 +1,12 @@
+{
+  "seasons": "2001\u201302 through 2025\u201326 (ending years 2002\u20132026)",
+  "regular_season_tables": "https://www.basketball-reference.com/leagues/NBA_{year}.html",
+  "regular_season_players": "https://www.basketball-reference.com/leagues/NBA_{year}_advanced.html",
+  "logs_2002_2009": "https://github.com/sportsdataverse/hoopR-data",
+  "logs_2010_2026": "https://github.com/llimllib/nba_data",
+  "excluded_optional": {
+    "d_playoff_exp": "Complete pre-2002 career playoff minutes are not available in the bulk logs. Omitted rather than substituting truncated experience."
+  },
+  "availability": "Top two by eligible regular-season team-stint minutes; missed >=3 of final 5 team regular-season games. Rest and injury are not distinguished.",
+  "target": "2026\u201327 live regular-season forecast. All 25 completed seasons through 2025\u201326 are training data; current-season outcomes are never training labels."
+}
