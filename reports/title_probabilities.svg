@@ -1,57 +1,57 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="528" viewBox="0 0 960 528" role="img" aria-labelledby="title description">
 <title id="title">NBA championship probabilities — primary forecast</title>
-<desc id="description">Top twelve teams. Games through 2026-11-07. All thirty probabilities appear in the README table.</desc>
+<desc id="description">Top twelve teams. Games through 2026-11-08. All thirty probabilities appear in the README table.</desc>
 <rect width="960" height="528" rx="16" fill="#101c2c"/>
 <g font-family="Arial, sans-serif">
 <text x="28" y="38" fill="#f5f8fc" font-size="23" font-weight="700">NBA Championship Forecast</text>
-<text x="28" y="66" fill="#b5c7da" font-size="14">Games through 2026-11-07 · 50,000 season paths · Primary model</text>
+<text x="28" y="66" fill="#b5c7da" font-size="14">Games through 2026-11-08 · 50,000 season paths · Primary model</text>
 <text x="28" y="107" fill="#e4edf7" font-size="14">Oklahoma City Thunder</text>
 <rect x="286" y="90" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="90" width="456.0" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="107" fill="#f5f8fc" font-size="15" font-weight="700">43.85%</text>
+<rect x="286" y="90" width="458.16" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="107" fill="#f5f8fc" font-size="15" font-weight="700">44.05%</text>
 <text x="28" y="141" fill="#e4edf7" font-size="14">San Antonio Spurs</text>
 <rect x="286" y="124" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="124" width="273.96" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="141" fill="#f5f8fc" font-size="15" font-weight="700">26.34%</text>
-<text x="28" y="175" fill="#e4edf7" font-size="14">Detroit Pistons</text>
+<rect x="286" y="124" width="250.16" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="141" fill="#f5f8fc" font-size="15" font-weight="700">24.05%</text>
+<text x="28" y="175" fill="#e4edf7" font-size="14">Los Angeles Lakers</text>
 <rect x="286" y="158" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="158" width="105.35" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="175" fill="#f5f8fc" font-size="15" font-weight="700">10.13%</text>
-<text x="28" y="209" fill="#e4edf7" font-size="14">Los Angeles Lakers</text>
+<rect x="286" y="158" width="90.94" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="175" fill="#f5f8fc" font-size="15" font-weight="700">8.74%</text>
+<text x="28" y="209" fill="#e4edf7" font-size="14">Detroit Pistons</text>
 <rect x="286" y="192" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="192" width="81.6" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="209" fill="#f5f8fc" font-size="15" font-weight="700">7.85%</text>
+<rect x="286" y="192" width="81.24" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="209" fill="#f5f8fc" font-size="15" font-weight="700">7.81%</text>
 <text x="28" y="243" fill="#e4edf7" font-size="14">Boston Celtics</text>
 <rect x="286" y="226" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="226" width="70.2" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="243" fill="#f5f8fc" font-size="15" font-weight="700">6.75%</text>
-<text x="28" y="277" fill="#e4edf7" font-size="14">Houston Rockets</text>
+<rect x="286" y="226" width="64.23" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="243" fill="#f5f8fc" font-size="15" font-weight="700">6.18%</text>
+<text x="28" y="277" fill="#e4edf7" font-size="14">New York Knicks</text>
 <rect x="286" y="260" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="260" width="13.79" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="277" fill="#f5f8fc" font-size="15" font-weight="700">1.33%</text>
-<text x="28" y="311" fill="#e4edf7" font-size="14">New York Knicks</text>
+<rect x="286" y="260" width="24.77" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="277" fill="#f5f8fc" font-size="15" font-weight="700">2.38%</text>
+<text x="28" y="311" fill="#e4edf7" font-size="14">Houston Rockets</text>
 <rect x="286" y="294" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="294" width="10.52" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="311" fill="#f5f8fc" font-size="15" font-weight="700">1.01%</text>
-<text x="28" y="345" fill="#e4edf7" font-size="14">Cleveland Cavaliers</text>
+<rect x="286" y="294" width="19.16" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="311" fill="#f5f8fc" font-size="15" font-weight="700">1.84%</text>
+<text x="28" y="345" fill="#e4edf7" font-size="14">Denver Nuggets</text>
 <rect x="286" y="328" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="328" width="8.05" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="345" fill="#f5f8fc" font-size="15" font-weight="700">0.77%</text>
-<text x="28" y="379" fill="#e4edf7" font-size="14">Denver Nuggets</text>
+<rect x="286" y="328" width="17.72" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="345" fill="#f5f8fc" font-size="15" font-weight="700">1.70%</text>
+<text x="28" y="379" fill="#e4edf7" font-size="14">Cleveland Cavaliers</text>
 <rect x="286" y="362" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="362" width="6.68" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="379" fill="#f5f8fc" font-size="15" font-weight="700">0.64%</text>
+<rect x="286" y="362" width="14.79" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="379" fill="#f5f8fc" font-size="15" font-weight="700">1.42%</text>
 <text x="28" y="413" fill="#e4edf7" font-size="14">Philadelphia 76ers</text>
 <rect x="286" y="396" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="396" width="5.84" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="413" fill="#f5f8fc" font-size="15" font-weight="700">0.56%</text>
+<rect x="286" y="396" width="8.13" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="413" fill="#f5f8fc" font-size="15" font-weight="700">0.78%</text>
 <text x="28" y="447" fill="#e4edf7" font-size="14">Minnesota Timberwolves</text>
 <rect x="286" y="430" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="430" width="4.47" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="447" fill="#f5f8fc" font-size="15" font-weight="700">0.43%</text>
-<text x="28" y="481" fill="#e4edf7" font-size="14">Toronto Raptors</text>
+<rect x="286" y="430" width="5.78" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="447" fill="#f5f8fc" font-size="15" font-weight="700">0.56%</text>
+<text x="28" y="481" fill="#e4edf7" font-size="14">Golden State Warriors</text>
 <rect x="286" y="464" width="520" height="23" rx="4" fill="#203349"/>
-<rect x="286" y="464" width="1.35" height="23" rx="4" fill="#4ed1bd"/>
-<text x="828" y="481" fill="#f5f8fc" font-size="15" font-weight="700">0.13%</text>
+<rect x="286" y="464" width="1.71" height="23" rx="4" fill="#4ed1bd"/>
+<text x="828" y="481" fill="#f5f8fc" font-size="15" font-weight="700">0.16%</text>
 <text x="28" y="510" fill="#b5c7da" font-size="12">Model estimates, not sportsbook odds. Bar scale: 0–50%. Forecast timestamp is shown in the README.</text>
 </g></svg>
