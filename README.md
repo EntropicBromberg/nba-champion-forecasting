@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-14** · Refreshed **2026-11-15 20:36 UTC**
+**Latest successful primary forecast** · Games through **2026-11-15** · Refreshed **2026-11-16 23:56 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
@@ -20,29 +20,29 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 
 | Team | Championship probability |
 |---|---:|
-| San Antonio Spurs | 40.68% |
-| Oklahoma City Thunder | 17.72% |
-| Boston Celtics | 16.77% |
-| Los Angeles Lakers | 9.39% |
-| Detroit Pistons | 5.75% |
-| Houston Rockets | 3.38% |
-| Denver Nuggets | 3.05% |
-| Philadelphia 76ers | 0.96% |
-| New York Knicks | 0.86% |
-| Cleveland Cavaliers | 0.72% |
-| Miami Heat | 0.27% |
-| Portland Trail Blazers | 0.20% |
-| Minnesota Timberwolves | 0.13% |
+| San Antonio Spurs | 32.04% |
+| Boston Celtics | 22.75% |
+| Oklahoma City Thunder | 18.73% |
+| Los Angeles Lakers | 10.57% |
+| Detroit Pistons | 5.74% |
+| Houston Rockets | 4.09% |
+| Denver Nuggets | 2.91% |
+| New York Knicks | 1.10% |
+| Philadelphia 76ers | 0.87% |
+| Cleveland Cavaliers | 0.60% |
+| Portland Trail Blazers | 0.19% |
+| Miami Heat | 0.16% |
+| Minnesota Timberwolves | 0.14% |
 | Golden State Warriors | 0.07% |
-| Atlanta Hawks | 0.03% |
-| Toronto Raptors | 0.01% |
+| Atlanta Hawks | 0.01% |
 | Orlando Magic | 0.01% |
+| Toronto Raptors | 0.01% |
+| Phoenix Suns | 0.01% |
 | Charlotte Hornets | 0.00% |
-| Indiana Pacers | 0.00% |
-| Phoenix Suns | 0.00% |
 | Brooklyn Nets | 0.00% |
 | Chicago Bulls | 0.00% |
 | Dallas Mavericks | 0.00% |
+| Indiana Pacers | 0.00% |
 | Los Angeles Clippers | 0.00% |
 | Memphis Grizzlies | 0.00% |
 | Milwaukee Bucks | 0.00% |

@@ -2,109 +2,104 @@
   "season": 2027,
   "trained_through": 2026,
   "training_seasons": 25,
-  "games_through": "2026-11-14",
-  "checked_at": "2026-11-15T20:36:26.557430+00:00",
+  "games_through": "2026-11-15",
+  "checked_at": "2026-11-16T23:56:15.491390+00:00",
   "simulations": 50000,
   "forecast": "primary",
   "odds": [
     {
       "team": "SAS",
       "name": "San Antonio Spurs",
-      "title_probability": 0.4068
-    },
-    {
-      "team": "OKC",
-      "name": "Oklahoma City Thunder",
-      "title_probability": 0.17716
+      "title_probability": 0.3204
     },
     {
       "team": "BOS",
       "name": "Boston Celtics",
-      "title_probability": 0.16768
+      "title_probability": 0.2275
+    },
+    {
+      "team": "OKC",
+      "name": "Oklahoma City Thunder",
+      "title_probability": 0.1873
     },
     {
       "team": "LAL",
       "name": "Los Angeles Lakers",
-      "title_probability": 0.09392
+      "title_probability": 0.10572
     },
     {
       "team": "DET",
       "name": "Detroit Pistons",
-      "title_probability": 0.05746
+      "title_probability": 0.05738
     },
     {
       "team": "HOU",
       "name": "Houston Rockets",
-      "title_probability": 0.03378
+      "title_probability": 0.0409
     },
     {
       "team": "DEN",
       "name": "Denver Nuggets",
-      "title_probability": 0.0305
-    },
-    {
-      "team": "PHI",
-      "name": "Philadelphia 76ers",
-      "title_probability": 0.00962
+      "title_probability": 0.02914
     },
     {
       "team": "NYK",
       "name": "New York Knicks",
-      "title_probability": 0.00862
+      "title_probability": 0.011
+    },
+    {
+      "team": "PHI",
+      "name": "Philadelphia 76ers",
+      "title_probability": 0.00872
     },
     {
       "team": "CLE",
       "name": "Cleveland Cavaliers",
-      "title_probability": 0.00716
-    },
-    {
-      "team": "MIA",
-      "name": "Miami Heat",
-      "title_probability": 0.00272
+      "title_probability": 0.006
     },
     {
       "team": "POR",
       "name": "Portland Trail Blazers",
-      "title_probability": 0.00202
+      "title_probability": 0.00192
+    },
+    {
+      "team": "MIA",
+      "name": "Miami Heat",
+      "title_probability": 0.00156
     },
     {
       "team": "MIN",
       "name": "Minnesota Timberwolves",
-      "title_probability": 0.0013
+      "title_probability": 0.00136
     },
     {
       "team": "GSW",
       "name": "Golden State Warriors",
-      "title_probability": 0.00072
+      "title_probability": 0.0007
     },
     {
       "team": "ATL",
       "name": "Atlanta Hawks",
-      "title_probability": 0.00028
-    },
-    {
-      "team": "TOR",
-      "name": "Toronto Raptors",
       "title_probability": 0.00012
     },
     {
       "team": "ORL",
       "name": "Orlando Magic",
+      "title_probability": 0.00012
+    },
+    {
+      "team": "TOR",
+      "name": "Toronto Raptors",
       "title_probability": 8e-05
-    },
-    {
-      "team": "CHO",
-      "name": "Charlotte Hornets",
-      "title_probability": 2e-05
-    },
-    {
-      "team": "IND",
-      "name": "Indiana Pacers",
-      "title_probability": 2e-05
     },
     {
       "team": "PHO",
       "name": "Phoenix Suns",
+      "title_probability": 6e-05
+    },
+    {
+      "team": "CHO",
+      "name": "Charlotte Hornets",
       "title_probability": 2e-05
     },
     {
@@ -120,6 +115,11 @@
     {
       "team": "DAL",
       "name": "Dallas Mavericks",
+      "title_probability": 0.0
+    },
+    {
+      "team": "IND",
+      "name": "Indiana Pacers",
       "title_probability": 0.0
     },
     {
