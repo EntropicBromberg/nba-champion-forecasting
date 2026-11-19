@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-17** · Refreshed **2026-11-18 22:48 UTC**
+**Latest successful primary forecast** · Games through **2026-11-18** · Refreshed **2026-11-19 22:51 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
@@ -20,34 +20,34 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 
 | Team | Championship probability |
 |---|---:|
-| San Antonio Spurs | 30.34% |
-| Oklahoma City Thunder | 21.41% |
-| Boston Celtics | 16.95% |
-| Los Angeles Lakers | 10.86% |
-| Detroit Pistons | 10.43% |
-| Houston Rockets | 3.06% |
-| Denver Nuggets | 2.46% |
-| New York Knicks | 1.63% |
-| Philadelphia 76ers | 1.04% |
-| Minnesota Timberwolves | 0.66% |
-| Cleveland Cavaliers | 0.52% |
-| Miami Heat | 0.41% |
-| Portland Trail Blazers | 0.15% |
-| Golden State Warriors | 0.02% |
-| Orlando Magic | 0.02% |
-| Phoenix Suns | 0.02% |
-| Atlanta Hawks | 0.00% |
+| San Antonio Spurs | 35.43% |
+| Boston Celtics | 19.26% |
+| Oklahoma City Thunder | 15.98% |
+| Detroit Pistons | 9.56% |
+| Los Angeles Lakers | 6.13% |
+| Denver Nuggets | 4.47% |
+| Houston Rockets | 4.42% |
+| New York Knicks | 1.68% |
+| Philadelphia 76ers | 1.08% |
+| Minnesota Timberwolves | 0.82% |
+| Cleveland Cavaliers | 0.56% |
+| Miami Heat | 0.35% |
+| Portland Trail Blazers | 0.19% |
+| Atlanta Hawks | 0.05% |
+| Phoenix Suns | 0.01% |
+| Golden State Warriors | 0.01% |
 | Charlotte Hornets | 0.00% |
+| Dallas Mavericks | 0.00% |
+| Orlando Magic | 0.00% |
+| Toronto Raptors | 0.00% |
 | Brooklyn Nets | 0.00% |
 | Chicago Bulls | 0.00% |
-| Dallas Mavericks | 0.00% |
 | Indiana Pacers | 0.00% |
 | Los Angeles Clippers | 0.00% |
 | Memphis Grizzlies | 0.00% |
 | Milwaukee Bucks | 0.00% |
 | New Orleans Pelicans | 0.00% |
 | Sacramento Kings | 0.00% |
-| Toronto Raptors | 0.00% |
 | Utah Jazz | 0.00% |
 | Washington Wizards | 0.00% |
 

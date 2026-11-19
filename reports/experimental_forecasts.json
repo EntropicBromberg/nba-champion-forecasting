@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "primary_fingerprint": "23c09ad024b02287b7a855d4c37f024bda9b6bc1e9089e7623ddc45861ac4882",
+  "primary_fingerprint": "c911aa4f216bc2d2cc7df095b947030eb3f241fb235828f5b04d09fa959aab5a",
   "models": {
     "uncertainty": {
       "id": "uncertainty",
@@ -10,118 +10,124 @@
     "injury": {
       "id": "injury",
       "status": "available",
-      "computed_at": "2026-11-18T22:48:16.136208+00:00",
-      "games_through": "2026-11-17",
+      "computed_at": "2026-11-19T22:51:38.419731+00:00",
+      "games_through": "2026-11-18",
       "simulations": 50000,
       "baseline": "primary",
       "odds": [
         {
           "team": "SAS",
           "name": "San Antonio Spurs",
-          "title_probability": 0.30512,
-          "baseline_title_probability": 0.30342
-        },
-        {
-          "team": "OKC",
-          "name": "Oklahoma City Thunder",
-          "title_probability": 0.20464,
-          "baseline_title_probability": 0.21414
+          "title_probability": 0.3564,
+          "baseline_title_probability": 0.35426
         },
         {
           "team": "BOS",
           "name": "Boston Celtics",
-          "title_probability": 0.17114,
-          "baseline_title_probability": 0.16954
+          "title_probability": 0.19394,
+          "baseline_title_probability": 0.1926
         },
         {
-          "team": "LAL",
-          "name": "Los Angeles Lakers",
-          "title_probability": 0.1115,
-          "baseline_title_probability": 0.10864
+          "team": "OKC",
+          "name": "Oklahoma City Thunder",
+          "title_probability": 0.15096,
+          "baseline_title_probability": 0.15982
         },
         {
           "team": "DET",
           "name": "Detroit Pistons",
-          "title_probability": 0.10502,
-          "baseline_title_probability": 0.10434
+          "title_probability": 0.09644,
+          "baseline_title_probability": 0.09556
         },
         {
-          "team": "HOU",
-          "name": "Houston Rockets",
-          "title_probability": 0.03208,
-          "baseline_title_probability": 0.03064
+          "team": "LAL",
+          "name": "Los Angeles Lakers",
+          "title_probability": 0.06318,
+          "baseline_title_probability": 0.0613
         },
         {
           "team": "DEN",
           "name": "Denver Nuggets",
-          "title_probability": 0.02542,
-          "baseline_title_probability": 0.02458
+          "title_probability": 0.04588,
+          "baseline_title_probability": 0.04474
+        },
+        {
+          "team": "HOU",
+          "name": "Houston Rockets",
+          "title_probability": 0.04538,
+          "baseline_title_probability": 0.04416
         },
         {
           "team": "NYK",
           "name": "New York Knicks",
-          "title_probability": 0.01628,
-          "baseline_title_probability": 0.01634
+          "title_probability": 0.01688,
+          "baseline_title_probability": 0.0168
         },
         {
           "team": "PHI",
           "name": "Philadelphia 76ers",
-          "title_probability": 0.01048,
-          "baseline_title_probability": 0.01038
+          "title_probability": 0.01078,
+          "baseline_title_probability": 0.01084
         },
         {
           "team": "MIN",
           "name": "Minnesota Timberwolves",
-          "title_probability": 0.0068,
-          "baseline_title_probability": 0.0066
+          "title_probability": 0.008,
+          "baseline_title_probability": 0.00816
         },
         {
           "team": "CLE",
           "name": "Cleveland Cavaliers",
-          "title_probability": 0.0052,
-          "baseline_title_probability": 0.00518
+          "title_probability": 0.00586,
+          "baseline_title_probability": 0.0056
         },
         {
           "team": "MIA",
           "name": "Miami Heat",
-          "title_probability": 0.00398,
-          "baseline_title_probability": 0.00408
+          "title_probability": 0.00362,
+          "baseline_title_probability": 0.0035
         },
         {
           "team": "POR",
           "name": "Portland Trail Blazers",
-          "title_probability": 0.00166,
-          "baseline_title_probability": 0.00148
-        },
-        {
-          "team": "GSW",
-          "name": "Golden State Warriors",
-          "title_probability": 0.00024,
-          "baseline_title_probability": 0.00024
-        },
-        {
-          "team": "ORL",
-          "name": "Orlando Magic",
-          "title_probability": 0.00016,
-          "baseline_title_probability": 0.00016
-        },
-        {
-          "team": "PHO",
-          "name": "Phoenix Suns",
-          "title_probability": 0.00016,
-          "baseline_title_probability": 0.00016
+          "title_probability": 0.002,
+          "baseline_title_probability": 0.00192
         },
         {
           "team": "ATL",
           "name": "Atlanta Hawks",
-          "title_probability": 8e-05,
-          "baseline_title_probability": 4e-05
+          "title_probability": 0.00046,
+          "baseline_title_probability": 0.0005
+        },
+        {
+          "team": "PHO",
+          "name": "Phoenix Suns",
+          "title_probability": 0.00012,
+          "baseline_title_probability": 8e-05
         },
         {
           "team": "CHO",
           "name": "Charlotte Hornets",
           "title_probability": 4e-05,
           "baseline_title_probability": 4e-05
+        },
+        {
+          "team": "GSW",
+          "name": "Golden State Warriors",
+          "title_probability": 2e-05,
+          "baseline_title_probability": 6e-05
+        },
+        {
+          "team": "ORL",
+          "name": "Orlando Magic",
+          "title_probability": 2e-05,
+          "baseline_title_probability": 2e-05
+        },
+        {
+          "team": "TOR",
+          "name": "Toronto Raptors",
+          "title_probability": 2e-05,
+          "baseline_title_probability": 2e-05
         },
         {
           "team": "BRK",
@@ -139,7 +145,7 @@
           "team": "DAL",
           "name": "Dallas Mavericks",
           "title_probability": 0.0,
-          "baseline_title_probability": 0.0
+          "baseline_title_probability": 2e-05
         },
         {
           "team": "IND",
@@ -174,12 +180,6 @@
         {
           "team": "SAC",
           "name": "Sacramento Kings",
-          "title_probability": 0.0,
-          "baseline_title_probability": 0.0
-        },
-        {
-          "team": "TOR",
-          "name": "Toronto Raptors",
           "title_probability": 0.0,
           "baseline_title_probability": 0.0
         },
