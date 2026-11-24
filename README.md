@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-21** · Refreshed **2026-11-22 21:16 UTC**
+**Latest successful primary forecast** · Games through **2026-11-22** · Refreshed **2026-11-24 02:36 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
@@ -20,36 +20,36 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 
 | Team | Championship probability |
 |---|---:|
-| San Antonio Spurs | 40.16% |
-| Oklahoma City Thunder | 16.17% |
-| Boston Celtics | 13.25% |
-| Detroit Pistons | 8.83% |
-| Denver Nuggets | 5.93% |
-| New York Knicks | 4.65% |
-| Los Angeles Lakers | 4.50% |
-| Houston Rockets | 3.51% |
-| Philadelphia 76ers | 1.13% |
-| Minnesota Timberwolves | 0.86% |
-| Cleveland Cavaliers | 0.64% |
-| Miami Heat | 0.19% |
+| San Antonio Spurs | 43.81% |
+| Oklahoma City Thunder | 11.18% |
+| Denver Nuggets | 9.95% |
+| Boston Celtics | 9.52% |
+| Detroit Pistons | 7.52% |
+| New York Knicks | 5.61% |
+| Los Angeles Lakers | 4.83% |
+| Houston Rockets | 3.68% |
+| Philadelphia 76ers | 1.29% |
+| Minnesota Timberwolves | 0.92% |
+| Cleveland Cavaliers | 0.87% |
+| Miami Heat | 0.60% |
 | Portland Trail Blazers | 0.10% |
-| Atlanta Hawks | 0.04% |
+| Atlanta Hawks | 0.08% |
 | Phoenix Suns | 0.01% |
-| Memphis Grizzlies | 0.01% |
+| Toronto Raptors | 0.01% |
+| Orlando Magic | 0.01% |
 | Golden State Warriors | 0.00% |
-| Orlando Magic | 0.00% |
-| Toronto Raptors | 0.00% |
+| Charlotte Hornets | 0.00% |
+| Washington Wizards | 0.00% |
 | Brooklyn Nets | 0.00% |
 | Chicago Bulls | 0.00% |
-| Charlotte Hornets | 0.00% |
 | Dallas Mavericks | 0.00% |
 | Indiana Pacers | 0.00% |
 | Los Angeles Clippers | 0.00% |
+| Memphis Grizzlies | 0.00% |
 | Milwaukee Bucks | 0.00% |
 | New Orleans Pelicans | 0.00% |
 | Sacramento Kings | 0.00% |
 | Utah Jazz | 0.00% |
-| Washington Wizards | 0.00% |
 
 </details>
 
