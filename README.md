@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-23** · Refreshed **2026-11-25 00:07 UTC**
+**Latest successful primary forecast** · Games through **2026-11-24** · Refreshed **2026-11-25 23:52 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
@@ -20,32 +20,32 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 
 | Team | Championship probability |
 |---|---:|
-| San Antonio Spurs | 44.35% |
-| Denver Nuggets | 11.76% |
-| Boston Celtics | 11.15% |
-| Detroit Pistons | 7.95% |
-| New York Knicks | 6.28% |
-| Oklahoma City Thunder | 5.67% |
-| Los Angeles Lakers | 5.21% |
-| Houston Rockets | 3.96% |
-| Minnesota Timberwolves | 1.27% |
-| Philadelphia 76ers | 1.07% |
-| Miami Heat | 0.61% |
-| Cleveland Cavaliers | 0.50% |
-| Portland Trail Blazers | 0.15% |
-| Atlanta Hawks | 0.05% |
-| Golden State Warriors | 0.01% |
+| San Antonio Spurs | 45.26% |
+| Boston Celtics | 11.54% |
+| Denver Nuggets | 9.12% |
+| Detroit Pistons | 8.82% |
+| Oklahoma City Thunder | 6.29% |
+| New York Knicks | 6.16% |
+| Los Angeles Lakers | 5.40% |
+| Houston Rockets | 3.94% |
+| Minnesota Timberwolves | 1.38% |
+| Philadelphia 76ers | 0.83% |
+| Miami Heat | 0.66% |
+| Cleveland Cavaliers | 0.33% |
+| Portland Trail Blazers | 0.16% |
+| Atlanta Hawks | 0.07% |
 | Phoenix Suns | 0.01% |
-| Charlotte Hornets | 0.00% |
-| Memphis Grizzlies | 0.00% |
+| Charlotte Hornets | 0.01% |
+| Golden State Warriors | 0.01% |
+| Memphis Grizzlies | 0.01% |
+| Orlando Magic | 0.00% |
+| Dallas Mavericks | 0.00% |
 | Brooklyn Nets | 0.00% |
 | Chicago Bulls | 0.00% |
-| Dallas Mavericks | 0.00% |
 | Indiana Pacers | 0.00% |
 | Los Angeles Clippers | 0.00% |
 | Milwaukee Bucks | 0.00% |
 | New Orleans Pelicans | 0.00% |
-| Orlando Magic | 0.00% |
 | Sacramento Kings | 0.00% |
 | Toronto Raptors | 0.00% |
 | Utah Jazz | 0.00% |
