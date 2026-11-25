@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-22** · Refreshed **2026-11-24 02:36 UTC**
+**Latest successful primary forecast** · Games through **2026-11-23** · Refreshed **2026-11-25 00:07 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
@@ -20,36 +20,36 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 
 | Team | Championship probability |
 |---|---:|
-| San Antonio Spurs | 43.81% |
-| Oklahoma City Thunder | 11.18% |
-| Denver Nuggets | 9.95% |
-| Boston Celtics | 9.52% |
-| Detroit Pistons | 7.52% |
-| New York Knicks | 5.61% |
-| Los Angeles Lakers | 4.83% |
-| Houston Rockets | 3.68% |
-| Philadelphia 76ers | 1.29% |
-| Minnesota Timberwolves | 0.92% |
-| Cleveland Cavaliers | 0.87% |
-| Miami Heat | 0.60% |
-| Portland Trail Blazers | 0.10% |
-| Atlanta Hawks | 0.08% |
+| San Antonio Spurs | 44.35% |
+| Denver Nuggets | 11.76% |
+| Boston Celtics | 11.15% |
+| Detroit Pistons | 7.95% |
+| New York Knicks | 6.28% |
+| Oklahoma City Thunder | 5.67% |
+| Los Angeles Lakers | 5.21% |
+| Houston Rockets | 3.96% |
+| Minnesota Timberwolves | 1.27% |
+| Philadelphia 76ers | 1.07% |
+| Miami Heat | 0.61% |
+| Cleveland Cavaliers | 0.50% |
+| Portland Trail Blazers | 0.15% |
+| Atlanta Hawks | 0.05% |
+| Golden State Warriors | 0.01% |
 | Phoenix Suns | 0.01% |
-| Toronto Raptors | 0.01% |
-| Orlando Magic | 0.01% |
-| Golden State Warriors | 0.00% |
 | Charlotte Hornets | 0.00% |
-| Washington Wizards | 0.00% |
+| Memphis Grizzlies | 0.00% |
 | Brooklyn Nets | 0.00% |
 | Chicago Bulls | 0.00% |
 | Dallas Mavericks | 0.00% |
 | Indiana Pacers | 0.00% |
 | Los Angeles Clippers | 0.00% |
-| Memphis Grizzlies | 0.00% |
 | Milwaukee Bucks | 0.00% |
 | New Orleans Pelicans | 0.00% |
+| Orlando Magic | 0.00% |
 | Sacramento Kings | 0.00% |
+| Toronto Raptors | 0.00% |
 | Utah Jazz | 0.00% |
+| Washington Wizards | 0.00% |
 
 </details>
 
