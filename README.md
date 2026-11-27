@@ -11,7 +11,7 @@ As a long-time basketball fan and lover of basketball analytics, I wanted to und
 ## Championship probabilities
 
 <!-- FORECAST:START -->
-**Latest successful primary forecast** · Games through **2026-11-25** · Refreshed **2026-11-27 00:06 UTC**
+**Latest successful primary forecast** · Games through **2026-11-25** · Refreshed **2026-11-27 23:47 UTC**
 
 ![Primary model championship probabilities](reports/title_probabilities.svg)
 
